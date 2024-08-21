@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap');
+.Page{
+  color: rgba(30, 30, 30, 0.70);
+  text-align: justify;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+}
+
+.PageHeader{
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 53px;
+  padding-top: 60px;
+}
+
+.PageHeadlines{
+  margin-top: 130px;
+  display: flex;
+  padding: 0px 109px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+.PageHeadlines p{
+  color: #4FC9E0;
+  text-align: center;
+  font-family: Nunito;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.7px;
+}
+
+.PageHeadlines h1{
+  color: #000;
+  /* heading/Secondary - regular */
+  font-family: "El Messiri";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 48px; /* 100% */
+  margin: 0;
+}
+.CoverImg{
+  display: block; /* Centers the image */
+  width: 100%; /* Adjust the width as per your requirement */
+}
+.sectionName{
+  color: #4FC9E0;
+  font-size: 14px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+.parentPageName{
+  font-size: 14px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.7px;
+}
+.PageInfos{
+  display: flex;
+  padding: 0px 109px;
+  align-items: flex-start;
+  gap: 66px;
+}
+.page-sections{
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+.Menus{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+.rightMenu{
+  cursor: pointer;
+  text-align: left;
+  display: flex;
+  padding: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  align-items: center;
+  gap: 20px;
+}
+.rightMenu:hover{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  border-left: 2px solid #4FC9E0;
+  color: #4FC9E0;
+  font-weight: 700;
+}
+.special{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  border-left: 2px solid #4FC9E0;
+  color: #4FC9E0;
+  font-weight: 700;
+}
+.contentRight{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 33px;
+}
+.contentLeft{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 33px;
+}
+.imgAbout{
+  /* width: 100%;
+  height: auto;
+  max-width: 250px; */
+}
+
+.imgAbout {
+  width: 350px;
+  height: 338px;
+}
+.PageImgx{
+  padding-top:  50px; ;
+  display: flex;
+  justify-content: space-around;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+img.imgs{
+  width: 100%;
+  height: auto;
+  max-width: 250px;
+}
+
+@media only screen and (max-width: 960px) {
+  .PageInfos{
+    padding: 0 80px;
+    gap: 0px;
+  }
+  .content{
+    min-width: 200px;
+  }
+  .rightMenu{
+    display: none;
+  }
+  .PageImgx{
+    justify-content: space-around;
+  }
+}
+@media only screen and (max-width: 670px) {
+  .PageHeadlines{
+    display: flex;
+    align-items: center;
+    padding: 0px 40px;
+  }
+  .PageHeadlines h1{
+    text-align: center;
+  }
+  .PageHeadlines p{
+    text-align: center;
+  }
+  .contentRight{
+    flex-direction: column;
+  }
+  .contentLeft{
+    flex-direction: column;
+  }
+  .PageInfos{
+    
+    gap: 0px;
+  }
+  .PageImgx{
+    justify-content: space-around;
+  }
+}
+@media only screen and (max-width: 420px){
+  .PageHeadlines{
+    padding: 0px 30px;
+  }
+  .PageInfos{
+    padding: 0 30px;
+  }
+  .footer-section{
+    padding: 0 0;
+  }
+}

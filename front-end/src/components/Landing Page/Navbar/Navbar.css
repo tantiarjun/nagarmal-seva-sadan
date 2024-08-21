@@ -1,0 +1,340 @@
+.main-navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar-heading {
+  justify-content: space-between;
+  background: #e3f4f6;
+  display: flex;
+  height: 69.619px;
+  padding: 18px 64px 18.619px 103px;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.navbar-second-consult h2 {
+  color: rgba(30, 30, 30, 0.7);
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.navbar-second-consult {
+  display: flex;
+  justify-content: center; /* Centers the content horizontally */
+  align-items: center; /* Centers the content vertically */
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center; /* Centers the content horizontally within the wrapper */
+}
+
+.Arrow {
+  font-size: 12px !important;
+  border-radius: 11px !important;
+  color: #fff;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  background: #083b46;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 18px; /* Adjust height as needed */
+  width: 30px; /* Adjust width as needed */
+}
+
+.navbar-heading-links {
+  display: flex;
+  gap: 0.6vw;
+}
+
+.navbar-heading-links img {
+  width: 20.057px;
+  height: 20.057px;
+  flex-shrink: 0;
+}
+
+.home-navbar {
+  display: flex;
+  padding: 1vw 7.57vw;
+  align-items: center;
+  justify-content: center;
+  gap: 65px;
+  opacity: 0.9;
+  background: #083b46;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.04);
+  backdrop-filter: blur(2px);
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-item-list {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19.07px;
+  text-align: left;
+  color: #fff;
+}
+
+.nav-item {
+  font-family: "Open Sans";
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  opacity: 0.6;
+}
+
+.nav-item-list li:first-child a {
+  font-weight: 700;
+  color: #e5fcff !important;
+  opacity: unset;
+}
+
+.nmss-logo {
+  display: flex;
+  align-items: center;
+  gap: 1.38vw;
+  color: #2e333e;
+  font-weight: 400;
+}
+
+.hospital-name {
+  display: none;
+  color: var(--Black, #2e333e);
+  font-family: "Open Sans";
+  font-size: 0.9vw;
+  font-weight: 600;
+}
+
+.nmss-logo img {
+  width: 250.7px;
+  height: 48.7px;
+}
+
+.call-img {
+  width: 1.66vw;
+  height: 1.66vw;
+}
+
+.call-img-black {
+  display: none;
+}
+
+.contact-us {
+  display: flex;
+  padding: 7.46px 16px 7.46px 15.67px;
+  align-items: center;
+  gap: 8.29px;
+  border-radius: 23.78px;
+  border: 1px solid #000;
+  color: #083b46;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 131%;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .navbar-heading {
+    display: none;
+  }
+
+  .home-navbar {
+    padding: 15px 25px;
+  }
+
+  .nav-item-list {
+    gap: 20px;
+  }
+
+  .nmss-logo img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .hospital-name {
+    display: block;
+    color: #fff;
+    font-size: 16px;
+  }
+
+  .nav-toggle {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .nav-toggle img {
+    width: 215px;
+    height: 40px;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #fff;
+    top: 100%;
+    gap: 0;
+    left: 0;
+    width: 100%;
+    padding-bottom: 20px;
+    justify-content: center;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    pointer-events: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  .nav-item {
+    font-size: 16px;
+    color: #2e333e !important;
+  }
+
+  .contact-us {
+    padding: 0;
+    color: #2e333e;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .call-img {
+    display: none;
+  }
+
+  .nav-item-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-item-list li:first-child a {
+    font-weight: 700;
+    color: #011a1d !important;
+    opacity: unset;
+  }
+}
+
+@media (max-width: 341px) {
+  .hospital-name {
+    display: none;
+  }
+}
+
+/*  About Container */
+
+.doctor-nav {
+  display: flex;
+  justify-content: center;
+  width: 32rem;
+  gap: 27px;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 16px;
+  align-items: center;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.15);
+  padding-bottom: 0;
+}
+
+.doc-nav-options {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.doc-nav-options li {
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.flex {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+/* .w-100 {
+  width: 500px;
+} */
+
+.w-location {
+  width: 250px;
+  flex-shrink: 0;
+}
+
+.textAdress {
+  color: #000;
+  font-family: "Open Sans";
+  font-size: 12.583px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18.358px; /* 139.387% */
+}
+.location {
+  font-size: 20px;
+}
+.nav-toggle {
+  font-size: 25px;
+  color: #fff;
+}
+
+@media (max-width: 1420px) {
+  .nav-item {
+    color: #fff;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.6;
+  }
+  .nmss-logo img {
+    width: 200.7px;
+    height: 40.7px;
+  }
+  .home-navbar {
+    padding: 1vw 2.57vw;
+  }
+
+  .link {
+    font-size: 15px !important;
+  }
+}

@@ -1,0 +1,136 @@
+.form-widget {
+  position: fixed;
+  right: 20px;
+  background: #fff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  width: 360px;
+  animation: slideInUp 0.3s ease-out;
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.form-widget form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #333;
+}
+
+.form-group input,
+.form-group select {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #4fc9e0;
+  outline: none;
+}
+
+.custom-file-upload {
+  display: flex;
+  align-items: center;
+}
+
+.custom-file-upload input[type="file"] {
+  display: none;
+}
+
+.custom-file-upload label {
+  background: #4fc9e0;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.custom-file-upload label:hover {
+  background: #0056b3;
+}
+
+button {
+  background: #4fc9e0;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+button:active {
+  background: #004494;
+}
+
+.error {
+  color: red;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 650px) {
+  .form-widget {
+    width: 90vw;
+  }
+}
+
+.flexb {
+  display: flex;
+  justify-content: space-between;
+}
+.close2 {
+  cursor: pointer;
+  color: red;
+  padding: 20px;
+  border-radius: 50%;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s, transform 0.2s;
+  height: 10px;
+  width: 10px;
+}
+
+.close2:hover {
+  color: darkred;
+  transform: scale(1.1);
+}

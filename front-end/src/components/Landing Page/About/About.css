@@ -1,0 +1,228 @@
+.main {
+  background-color: white;
+  padding-top: 100px;
+  padding-bottom: 0px;
+}
+
+.About,
+.NEWPATIENTS {
+  display: flex;
+  flex-direction: row;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  /* margin: 2vw 3.4vw 1.38vw 2vw; */
+  padding-left: 8.36vw;
+  padding-right: 8.36vw;
+  gap: 2.5vw;
+  /* align-items: center; */
+}
+
+.about-container {
+  /* position: relative; */
+  display: inline-block;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.about-tag {
+  color: #000;
+  font-family: "El Messiri";
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 54px; /* Set line-height equal to font-size */
+}
+
+.about-text {
+  color: rgba(30, 30, 30, 0.7);
+  leading-trim: both;
+  text-edge: cap;
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  align-self: stretch;
+  width: 38vw;
+  margin-top: -1vh;
+  margin-bottom: 4vh;
+}
+
+.image {
+  width: 681px;
+  height: 600px;
+  border-radius: 10px;
+  margin-top: -10vh;
+}
+
+.cards {
+  margin-top: 5.5vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-right: 0%;
+  margin-right: 0%;
+  gap: 2.5vw;
+  padding-left: 7.3vw;
+  padding-right: 7.3vw;
+}
+
+.card {
+  justify-content: center;
+  width: Fill (389px) px;
+  height: Fixed (217px) px;
+  padding: 34px 47px 34px 47px;
+  gap: 24px;
+  border-radius: 32px 0px 0px 0px;
+  opacity: 0px;
+  box-shadow: 0 0 15px -1px #00000014;
+  margin-bottom: 120px;
+  border-radius: 2.86vw;
+  display: flex;
+}
+
+.logo {
+  width: 6.5vw;
+  height: 6.5vw;
+  /* margin-bottom: 30px; */
+}
+
+.text2 {
+  /* width: 287px; */
+  /* height: auto; */
+  margin: 0;
+  padding: 0;
+  font-family: Nunito;
+  font-size: 18px;
+  line-height: 24.55px;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .About {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 2vw 5vw;
+  }
+
+  .about-content {
+    padding-left: 2vw;
+    align-items: center;
+  }
+
+  .about-text {
+    margin-bottom: 3vw;
+    width: auto;
+    text-align: center;
+  }
+
+  .image {
+    margin-top: 3vw;
+    width: 80vw;
+    height: auto;
+  }
+
+  .text2 {
+    width: 287px;
+  }
+
+  .cards {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 4vw;
+  }
+
+  .about-tag {
+    color: #000;
+    font-family: "El Messiri";
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 38px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  /* .logo {
+        width: 11vw;
+        height: auto;
+    }   */
+
+  .card {
+    border-radius: px;
+  }
+}
+
+@media (max-width: 475px) {
+  .logo {
+    width: 12vw;
+    height: auto;
+  }
+
+  .image {
+    width: 80vw;
+    height: auto;
+  }
+
+  .text2 {
+    width: 58.5vw;
+    font-size: 16px;
+  }
+
+  .about-text {
+    font-size: 16px;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    margin-top: 0;
+    width: 75vw;
+  }
+}
+
+@media (max-width: 521px) {
+  .about-tag {
+    color: #000;
+    font-family: "El Messiri";
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 38px;
+    text-align: center;
+  }
+}
+
+.aboutHead {
+  font-family: Nunito;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19.1px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: #4fc9e0;
+  margin-bottom: -1.8vh;
+}
+
+.learnMore {
+  display: flex;
+  width: 310px;
+  padding: 15px 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 16px;
+  border: 1px solid #083b46;
+}

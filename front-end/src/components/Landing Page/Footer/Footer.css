@@ -1,0 +1,178 @@
+.footer {
+  background: #083B46;
+  color: #e0e0e0;
+  padding: 40px 60px;
+  margin-top: 100px;
+  border-top: 1px solid #1a2a2f;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* .logo-img {
+  max-width: 120px;
+  height: auto;
+} */
+
+.nmss-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hospital-name {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #fff;
+}
+
+.footer-section p {
+  color: #d0d0d0;
+  font-size: 0.9em;
+}
+
+.socials {
+  display: flex;
+  gap: 15px;
+  padding-top: 20px;
+}
+
+.socials a {
+  font-size: 1.3em;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.socials a:hover {
+  color: #4fc9e0;
+}
+
+.footer-section h2 {
+  color: #fff;
+  margin-bottom: 15px;
+  font-size: 1.2em;
+
+}
+
+.footer-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-section ul li a {
+  color: #d0d0d0;
+  text-decoration: none;
+  margin-bottom: 10px;
+  display: block;
+  font-size: 0.9em;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #4fc9e0;
+}
+
+.subscribe form {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.subscribe input[type="email"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  flex: 1;
+  background: #f0f0f0;
+  font-size: 0.9em;
+}
+
+.subscribe button {
+  padding: 10px;
+  border: none;
+  background: #4fc9e0;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-size: 0.9em;
+  margin-top: 0;
+}
+
+.subscribe button:hover {
+  background: #348393;
+}
+
+.footer-bottom {
+  border-top: 1px solid #d0d0d0;
+  text-align: center;
+  padding: 20px 0;
+  color: #fff;
+  font-size: 0.8em;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+.footer-bottom p a {
+  color: #4fc9e0;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-bottom p a:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 670px) {
+  .footer {
+    padding: 40px 20px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .footer {
+    padding: 20px 10px;
+  }
+}
+.footer-logo {
+  margin-top: 20px;
+}
+
+
+.mailbutton{
+width: 56px;
+height: 42px;
+flex-shrink: 0;
+background-color: #4FC9E0;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 16px;
+border-radius: 0 5px 5px 0;
+}
+
+.bold{
+  font-weight: 700;
+  margin-left: 2px;
+}
+
+
+.hline{
+  width: 55.438px;
+height: 2.025px;
+flex-shrink: 0;
+background: rgba(79, 201, 224, 0.42);
+margin-top: -26px;
+}

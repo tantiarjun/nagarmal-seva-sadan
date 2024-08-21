@@ -1,0 +1,65 @@
+.reviews {
+  display: flex;
+  flex-direction: column;
+  padding: 2.7vw 7.7vw;
+  gap: 52px;
+}
+
+.review-heading h1 {
+  color: #083b46;
+  text-align: center;
+  font-family: "El Messiri";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 48px; /* 100% */
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.review-description p {
+  color: rgba(30, 30, 30, 0.7);
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+.slick-slide {
+  padding: 0 10px;
+}
+
+.custom-arrow {
+  position: absolute;
+  top: 44%;
+  transform: translateY(-50%);
+  z-index: 10;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .custom-arrow img {
+    display: none;
+  }
+}
+.review-heading h6 {
+  font-family: Nunito;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19.1px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: #4fc9e0;
+}
+
+.review-heading h5 {
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24.51px;
+  text-align: center;
+  color: #1e1e1eb2;
+}

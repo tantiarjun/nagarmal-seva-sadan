@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+:root {
+  --primary: #4fc9e0;
+  --secondary: #083b46;
+  --white: #ffffff;
+
+  --header-font-family: "El Messiri", sans-serif;
+  --header-font-weight: 700;
+
+  --regular-font-family: "Open Sans", sans-serif;
+  --regular-font-weight: 400;
+
+  --small-font-family: "Open Sans", sans-serif;
+  --small-font-weight: 400;
+
+  --title-font-family: "El Messiri", sans-serif;
+  --title-font-weight: 400;
+
+  /* This should be used when we have flex collum and row-gap is being used */
+  --in-column-gap: 1.5rem;
+  /* This should be used when we have flex row and col-gap is being used */
+  --in-row-gap: 3rem;
+  /* This should be used when we want to use col-gap */
+  --in-section-gap: 2rem; /* Default is 32px */
+}
+
+html {
+  font-size: 16px; /* Base font size is 16px */
+}
+
+/* Small Devices (min-width: 640px) */
+@media (min-width: 640px) {
+  html {
+    font-size: 14px; /* Adjust rem base for small devices */
+  }
+  .content-wrapper {
+    padding: 0px 24px; /* Adjust padding for small devices */
+  }
+}
+
+/* Medium Devices (min-width: 768px) */
+@media (min-width: 768px) {
+  html {
+    font-size: 16px; /* Adjust rem base for medium devices */
+  }
+  .content-wrapper {
+    padding: 0px 32px; /* Adjust padding for medium devices */
+  }
+}
+
+/* Large Devices (min-width: 1024px) */
+@media (min-width: 1024px) {
+  html {
+    font-size: 18px; /* Adjust rem base for large devices */
+  }
+  .content-wrapper {
+    padding: 0px 40px; /* Adjust padding for large devices */
+  }
+}
+
+/* Extra Large Devices (min-width: 1280px) */
+@media (min-width: 1280px) {
+  html {
+    font-size: 20px; /* Adjust rem base for extra large devices */
+  }
+  .content-wrapper {
+    padding: 0rem 3rem; /* Adjust padding for extra large devices */
+  }
+}
+
+/* Specific element sizes using rem */
+:root {
+  --header-font-size: 3rem; /* Default is 48px (3 * 16px) */
+  --regular-font-size: 1rem; /* Default is 18px (1.125 * 16px) */
+  --small-font-size: 0.875rem; /* Default is 14px (0.875 * 16px) */
+  --title-font-size: 1.125rem; /* Default is 18px (1.125 * 16px) */
+}
+
+*,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans";
+}
+
+a {
+  text-decoration: none;
+}
+
+*,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans";
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-black1);
+}
+
+/* @media (max-width: 1040px) {
+    .wrapper {
+        padding: 0 20px;
+    }
+} */
+
+.w-32 {
+  width: 36vw;
+}
+.home-main2 {
+  display: flex;
+  padding-left: 10vw;
+  gap: 4vw;
+}
+
+.b-w {
+  width: 100%;
+}
+
+@media (max-width: 1620px) {
+  .home-main2 {
+    display: flex;
+    padding-left: 6vw;
+    gap: 12vw;
+  }
+}
+
+@media (max-width: 1320px) {
+  .home-main2 {
+    display: flex;
+    padding-left: 2vw;
+    gap: 18vw;
+  }
+}
+
+@media (max-width: 1020px) {
+  .home-main2 {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2vw;
+    gap: 18vw;
+  }
+
+  .w-32 {
+    width: 100%;
+  }
+}
+
+.slick-prev,
+.slick-next {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.slick-prev {
+  left: -35px; /* Adjust as needed */
+}
+
+.slick-next {
+  right: -35px; /* Adjust as needed */
+}
+
+.slick-prev svg,
+.slick-next svg {
+  font-size: 35px;
+  color: #083b46;
+  /* background-color: #000; */
+  border-radius: 50%;
+  padding: 5px; /* Add padding to make the icons circular */
+}
+.slick-dots {
+  display: none !important;
+}

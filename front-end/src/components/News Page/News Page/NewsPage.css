@@ -1,0 +1,30 @@
+.entire-page {
+    display: flex;
+    padding: 192px 10vw 0px 8.5vw;
+    gap: 50px;
+}
+
+.articles{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+@media (max-width: 1295px) {
+    .entire-page {
+        justify-content: center;
+        /* align-items: center; */
+    }
+    .sidebar{
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    .entire-page{
+        padding-top: 150px;
+    }
+    .articles {
+        width: 100%;
+    }
+}

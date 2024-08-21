@@ -1,0 +1,212 @@
+/* Floating button styles */
+.floating-button {
+  position: fixed;
+  bottom: 60px;
+  right: 60px;
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  height: 30px;
+  width: 30px;
+}
+
+.floating-button.open {
+  transform: rotate(45deg);
+}
+
+.floating-button .label {
+  display: none;
+}
+
+.floating-button.open .label {
+  display: block;
+  margin-top: 5px;
+  font-family: var(--regular-font-family);
+  font-size: var(--regular-font-size);
+}
+
+.floating-button .icon {
+  font-size: 24px;
+  line-height: 1;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  backdrop-filter: blur(10px); /* Apply blur effect */
+  margin-top: 8vh;
+}
+
+.overlay-content {
+  background-color: var(--white);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+}
+
+.overlay-content .close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.success-gif img {
+  width: 100px;
+  height: auto;
+}
+
+.success-message {
+  font-size: 24px;
+  margin: 20px 0 10px;
+}
+
+.success-description {
+  font-size: 16px;
+  color: var(--gray);
+}
+
+/* Form widget styles */
+.form-widget {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--white);
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  width: 360px;
+  animation: slideInUp 0.3s ease-out;
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.form-widget form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-family: var(--small-font-family);
+  font-size: var(--small-font-size);
+  color: var(--black);
+}
+
+.form-group input,
+.form-group select {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: var(--small-font-family);
+  font-size: var(--small-font-size);
+  transition: border-color 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: var(--primary);
+  outline: none;
+}
+
+.form-group input[type="file"] {
+  padding: 8px;
+}
+
+button {
+  display: flex;
+  width: 263.264px;
+  height: 45.304px;
+  padding: 13.736px 27.472px;
+  justify-content: center;
+  align-items: center;
+  gap: 9.157px;
+  border-radius: 16px !important;
+  border: 0.916px solid #083b46;
+  margin-top: 35px !important;
+}
+
+button:hover {
+  background: #4bd0eb; /* Adjust as needed */
+}
+
+button:active {
+  background: #3ba3b8; /* Adjust as needed */
+}
+
+/* Additional styling for better UI */
+.form-group .file-upload {
+  display: flex;
+  align-items: center;
+}
+
+.form-group .file-upload label {
+  flex: 1;
+  cursor: pointer;
+}
+
+.form-group .file-upload input[type="file"] {
+  display: none;
+}
+
+.form-group .file-upload span {
+  flex: 2;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: var(--regular-font-family);
+  font-size: var(--regular-font-size);
+  background: #f9f9f9;
+  margin-left: 10px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.form-group .file-upload span:hover {
+  background: #ececec;
+}
+
+@media only screen and (max-width: 650px) {
+  .form-widget {
+    width: 90vw;
+  }
+}

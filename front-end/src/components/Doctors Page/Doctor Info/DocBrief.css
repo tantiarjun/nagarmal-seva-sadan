@@ -1,0 +1,120 @@
+.brief_profile {
+    width: 100%;
+    height: 474px;
+    background-color: #083B46;
+    display: flex;
+    flex-direction: row;
+}
+
+.profile {
+    display: flex;
+    padding: 69px 115px 42px 69px;
+    flex-direction: column; 
+    justify-content: center;
+    gap: 15px;  
+}
+
+.doctor_image{
+    width: 594px;
+    height: 474px;
+}
+
+.main-part {
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0%;
+}
+
+.name {
+    color: #4FC9E0; 
+    font-family: "El Messiri";
+    font-size: 2vw;
+    line-height: 128.5%;
+    margin: 0;
+}
+
+.doc-brief-unit {
+    margin-top: 0%;
+    color: rgba(255, 255, 255, 0.60);
+    font-family: Nunito;
+    font-size: 1.5vw;
+    margin-bottom: 0%;
+}
+
+.field {
+    display: flex;
+    padding: 18.156px 18.642px 18.156px 16.02px;
+    justify-content: center;
+    align-items: center;
+    gap: 10.68px;
+    border-radius: 17.088px;
+    background: rgba(79, 201, 224, 0.20);
+    color: #4FC9E0;
+    font-family: "Open Sans";
+    font-size: 19.224px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 128.5%; 
+}
+
+.descript {
+    display: flex;
+    flex-direction: row;
+    gap: 6vw;
+}
+
+.title {
+    color: #4FC9E0;
+    font-family: "Open Sans";
+    font-size: 1vw;
+    font-weight: 700;
+    letter-spacing: 0.05vw;
+    margin-bottom: 0%;
+}
+
+.title_descript {
+    margin-top: 0.9vw;
+    color: #FFF;
+    font-family: "Open Sans";
+    font-size: 1.05vw;
+    width: 20.5vw;
+}
+
+.buttons {
+    justify-content: flex-start;
+    gap: 1.3vw;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+.call {
+    display: flex;
+    padding: 0.7vw 1.5vw;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1vw;
+    border-color: transparent;
+    background: #4FC9E0;
+    color: var(--White, #FFF);
+    font-family: Nunito;
+    font-size: 0.9vw;
+    font-weight: 600;
+}
+
+.book_an_app {
+    background-color: transparent;
+    display: flex;
+    padding: 0.7vw 1.5vw;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1vw;
+    border: 0.05vw solid #FFF;
+    color: #FFF;
+    font-family: Nunito;
+    font-size: 0.9vw;
+    font-weight: 600;
+}

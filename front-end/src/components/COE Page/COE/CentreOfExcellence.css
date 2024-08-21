@@ -1,0 +1,30 @@
+.coe-page {
+  padding-top: 200px;
+  padding-left: 102px;
+  padding-right: 102px;
+}
+
+.coe-page h1 {
+  color: #000;
+  font-family: "El Messiri";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 48px; /* 100% */
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .centre-of-excellence {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+}

@@ -1,0 +1,155 @@
+.overlay {
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.3s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modal {
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  width: 500px;
+  max-width: 90%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.modal-header h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.close {
+  cursor: pointer;
+  color: red;
+  padding: 20px;
+  border-radius: 50%;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s, transform 0.2s;
+  height: 10px;
+  width: 10px;
+}
+
+.close:hover {
+  color: darkred;
+  transform: scale(1.1);
+}
+
+.modal form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal label {
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #555;
+}
+
+.modal input[type="text"],
+.modal input[type="tel"],
+.modal input[type="date"],
+.modal select {
+  margin-bottom: 15px;
+  padding: 12px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.modal input[type="text"]:focus,
+.modal input[type="tel"]:focus,
+.modal input[type="date"]:focus,
+.modal select:focus {
+  border-color: #4fc9e0;
+  box-shadow: 0 0 5px rgba(79, 201, 224, 0.5);
+  outline: none;
+}
+
+.modal .dropdown {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.file-input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.file-input-label {
+  background-color: #4fc9e0;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.file-input-label:hover {
+  background-color: #20b8d6;
+  transform: scale(1.05);
+}
+
+.file-input-container input[type="file"] {
+  display: none;
+}
+
+.file-name {
+  margin-left: 15px;
+  font-size: 14px;
+  color: #666;
+}
+
+.modal button {
+  padding: 15px;
+  font-size: 18px;
+  background-color: #4fc9e0;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.modal button:hover {
+  background-color: #20b8d6;
+  transform: scale(1.05);
+}

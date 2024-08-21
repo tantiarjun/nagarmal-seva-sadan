@@ -1,0 +1,72 @@
+.gallery_button {
+    display: flex;
+    justify-content: center;
+    padding: 3vw;
+}
+
+.news-gallery {
+  margin: 0 ;
+  padding: 12vw 6vw 0vw 6vw;
+}
+
+.small_heading {
+    font-family: Nunito;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19.1px;
+    letter-spacing: 0.05em;
+    color: #4FC9E0;
+}
+
+.hospital_name {
+    font-family: El Messiri;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 48px;
+    text-align: left;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2vw;
+}
+
+@media (max-width: 768px) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2.5vw;
+    }
+
+    .small_heading {
+        font-size: 10px;
+    }
+
+    .hospital_name {
+        font-size: 40px;
+    }
+    .gallery_button {
+        padding-top: 8vw;
+    }
+}
+
+@media (max-width: 426px) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 4vw;
+    }
+
+    .news-gallery {
+        padding: 20vw 10vw;
+    }
+
+    .hospital_name {
+        font-size: 30px;
+    }
+
+    .gallery_button {
+        padding-top: 10vw;
+    }
+}

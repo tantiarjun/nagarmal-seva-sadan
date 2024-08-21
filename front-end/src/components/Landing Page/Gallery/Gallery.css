@@ -1,0 +1,73 @@
+.gallery {
+  display: flex;
+  padding: 4.16vw 7.77vw 8.6vw 7.77vw;
+  flex-direction: column;
+  gap: 3.2vw;
+}
+
+.gallery-heading {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.52;
+  justify-content: center;
+}
+
+.gallery-heading h1 {
+  color: #083b46;
+  text-align: center;
+  font-family: "El Messiri";
+  font-size: 49px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 49px;
+  margin: 0;
+}
+
+.explore-more {
+  display: flex;
+  justify-content: center;
+}
+
+.galleryFlex {
+  display: flex;
+  gap: 20px;
+}
+
+.news_card img {
+  width: 21vw;
+  opacity: 1;
+  transition: transform 0.7s ease;
+  height: 450px;
+}
+.gallery-heading h6 {
+  font-family: Nunito;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19.1px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: #4fc9e0;
+}
+
+.gallery-heading h5 {
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24.51px;
+  text-align: center;
+  color: #1e1e1eb2;
+}
+
+@media (max-width: 1020px) {
+  .gallery-heading h1 {
+    color: #083b46;
+    text-align: center;
+    font-family: "El Messiri";
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 38px;
+    margin: 0;
+  }
+}

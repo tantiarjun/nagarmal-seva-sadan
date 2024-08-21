@@ -1,0 +1,147 @@
+.team {
+  padding: 5vw 11vw;
+}
+
+.team_h{
+  font-family: Nunito;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19.1px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: #4FC9E0;
+}
+
+.team-heading {
+  color: #000;
+  text-align: center;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: "El Messiri";
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 48px;
+}
+
+.team-text {
+  color: rgba(30, 30, 30, 0.7);
+  text-align: center;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 8vh;
+}
+
+.view-all-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 36px;
+}
+
+.team-viewall {
+  padding: 15px 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 20px;
+  border: 1px solid #083b46;
+  background-color: white;
+}
+
+.team-viewall:hover {
+  background-color: #4fc9e0;
+  border-color: #4fc9e0;
+  transition: 300ms;
+  color: white;
+}
+
+/* Navbar */
+.team-navbar {
+  display: flex;
+  overflow: hidden;
+  margin-bottom: 36px;
+  width: 100%;
+  height: 52px;
+  background: #fff;
+  border-radius: 43px;
+  box-shadow: 0px 0px 20.886px -0.746px rgba(0, 0, 0, 0.1);
+  padding: 7px;
+  align-items: center;
+}
+
+.nav-menu {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  display: none;
+}
+
+.nav-item.visible {
+  display: block;
+}
+
+.nav-item a {
+  color: #33333391;
+  text-align: center;
+  padding: 8px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav-item a.clicked {
+  background-color: #4fc9e0;
+  color: white;
+  border-radius: 20px;
+  padding: 8px 15px;
+}
+
+.nexticon,
+.previcon {
+  font-size: 30px;
+  color: #4fc9e0;
+  cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+  .nav-item {
+    display: block;
+  }
+
+  .nexticon,
+  .previcon {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .team-navbar {
+    border-radius: 3vw;
+  }
+
+  .nav-item a {
+    font-size: 2.5vw;
+  }
+
+  .team-text {
+    display: none;
+  }
+}
+
+@media (max-width: 425px) {
+  .team-navbar {
+    height: 9vw;
+  }
+
+  .nav-item a {
+    padding: 2vw 2vw;
+  }
+}

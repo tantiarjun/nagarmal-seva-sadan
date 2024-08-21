@@ -1,0 +1,83 @@
+.review-card {
+    display: flex;
+    padding: 29px 32px 45px 32px;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    height: 460px;
+    border-radius: 38px;
+    border: 1.32px solid #CFD6DF;
+    background: #FFF;
+    box-shadow: 0px 2.639px 5.279px 0px rgba(52, 66, 81, 0.05);
+}
+
+.review-card img {
+    width: 131.965px;
+    height: 131.965px;
+}
+
+.review-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.review-content h2 {
+    color: var(--color-dark-500, #242E39);
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 23.754px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 31.672px; /* 133.333% */
+    margin: 0;
+}
+
+.review-content p {
+    margin: 0;
+    overflow: hidden;
+    text-align: center;
+    color: rgba(30, 30, 30, 0.70);
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20.4px;
+}
+
+.review-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 3; 
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.rating{
+    display: flex;
+    padding: 13.196px 15.836px;
+    align-items: center;
+    gap: 13px;
+    border-radius: 7.918px;
+    background: #F7F8FA;
+}
+
+.star-rating {
+    display: flex;
+    gap: 5px;
+}
+
+.star-rating svg {
+    width: 23.754px;
+    height: 22.764px;
+}
+
+.point-rating {
+    color: var(--color-dark-100, #687D94);
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26.393px; /* 146.628% */
+}

@@ -1,0 +1,203 @@
+.doctors-page {
+    padding: 11vw 8.54vw 8vw 8vw;
+}
+
+/* Styling the Title  */
+.doc-page-title {
+    padding-bottom: 6.8vw;
+    /* gap: 20px; */
+}
+
+.doc-page-title p {
+    color: #4FC9E0;
+    font-family: Nunito;
+    font-size: 0.9vw;
+    /* font-size: 14px; */
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 1vw;
+
+}
+
+.doc-page-title h1 {
+    color: #000;
+    font-family: "El Messiri";
+    font-size: 3vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3vw; 
+    margin: 0;
+}
+
+.doc-page-description{
+    display: flex;
+    flex-direction: column;
+    gap: 5.2vw;
+}
+
+.filter-speciality{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.select-wrapper {
+    display: flex;
+    padding: 17px 18px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 16px;
+    border: none;
+    outline: none;
+    background: #4FC9E0;
+}
+
+.select-doc-speciality {
+    appearance: none; /* Remove default arrow */
+    -webkit-appearance: none; /* Remove default arrow in Safari */
+    -moz-appearance: none; /* Remove default arrow in Firefox */
+    display: flex;
+    border: none;
+    outline: none;
+    background: #4FC9E0;
+    color: var(--White, #FFF);
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.dropdown-icon {
+    pointer-events: auto; /* Make sure the icon can trigger events */
+}
+
+/* Styling the Search  */
+
+.doc-search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    /* padding-bottom: 4vw; */
+}
+
+.doc-search-bar {
+    display: inline-flex;
+    padding: 17px 18px;
+    align-items: center;
+    gap: 0.8vw;
+    border-radius: 0.8vw;
+    border: 0.06vw solid #D9D9D9;
+}
+
+#doc-search-icon {
+    width: 1.16vw;
+    height: auto;
+    fill: #D9D9D9;
+}
+
+.doc-search-bar input {
+    border: none;
+    width: 18.5vw;
+    outline: none;
+    color: rgba(0, 0, 0, 0.24);
+    font-family: "Open Sans";
+    font-size: 0.9vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 128.5%;
+}
+
+.doc-search-bar input:focus {
+    color: #000;
+}
+
+/* Doctor Cards */
+
+.doc-cards-page {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: auto;
+    /* padding-left: 37px; */
+    /* padding-right: 8.5vw; */
+    align-items: center;
+    column-gap: 6.3vw; 
+    row-gap: 2.6vw; 
+    /* padding-bottom: 4.5vw; */
+}
+
+.doc-view-more-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@media (max-width: 1024px) {
+    .doc_cards-page {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        grid-template-rows: auto;
+        
+    }
+
+    .doctors-page {
+        padding: 13vw 5vw 8vw 5vw;
+    }
+
+    .doc-page-title {
+        padding-bottom: 3.8vw;
+    }
+}
+
+@media (max-width: 768px){
+    .doc_cards-page {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows: auto;
+    }
+
+    .doctors-page {
+        padding: 16vw 1vw 8vw 9vw;
+    }
+}
+
+@media (max-width: 426px){
+    .doc_cards-page {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+        grid-template-rows: auto;
+    }
+
+    .doctors-page {
+        padding: 26vw 1vw 8vw 9vw;
+    }
+
+    .view-more {
+        font-size: 3vw;
+        margin-right: 10vw;
+    }
+
+    .doc-page-title p {
+        font-size: 2.5vw;
+        margin-bottom: 2.5vw;
+    }
+
+    .doc-page-title h1 {
+        font-size: 4.7vw;
+        margin-bottom: 2vw;
+    }
+
+    .doc-search-bar input {
+        font-size: 2.5vw;
+        width: 48vw;
+    }
+
+    #doc-search-icon{
+        width: 3vw;
+    }
+   
+}
+
